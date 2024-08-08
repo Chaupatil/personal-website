@@ -68,33 +68,31 @@ section {
 }
 
 h2 {
-  font-size: 2rem;
-  color: #ff7e5f;
-  border-bottom: 3px solid #ff7e5f;
-  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #ff7e5f;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  color: #333;
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .skills-list {
-  list-style: none;
-  padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .skills-list li {
   background: #fff;
-  border-radius: 8px;
   padding: 0.5rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .project {
@@ -121,6 +119,21 @@ h3 {
   font-weight: bold;
   color: #ff7e5f;
   margin: 0.5rem 0;
+}
+
+.project-link-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff7e5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link-button:hover {
+  background-color: #feb47b;
 }
 
 #about,
@@ -167,5 +180,9 @@ footer {
 
   nav ul li {
     margin: 0.5rem 0;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }
