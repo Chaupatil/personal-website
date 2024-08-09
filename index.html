@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
+    <meta
+      name="description"
+      content="Shravan Patil - Computer Science Engineer specializing in DevOps and Full-Stack Development. Explore my skills, projects, and experience."
+    />
+    <title>Shravan Patil - Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <div class="hero-section">
-        <h1>Hello, I'm Shravan Patil.</h1>
+        <h1>Hello, I'm Shravan Patil</h1>
         <p>Welcome to my personal website.</p>
       </div>
       <nav>
@@ -24,29 +28,29 @@
     </header>
 
     <main>
-      <section id="about">
-        <h2>About Me</h2>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
         <p>
-          Hi, I'm Shravan Patil. I graduated with a Bachelor’s degree in
-          Computer Science Engineering in 2018. After graduation, I managed my
-          family business but am now eager to return to the tech world. I have
-          completed courses in DevOps and full-stack development, learning
+          Hi, I'm Shravan Patil. I graduated with a Bachelor's degree in
+          Computer Science Engineering. After graduation, I managed my family
+          business but am now eager to return to the tech world. I have
+          completed courses in DevOps and Full-Stack development, learning
           various tools and technologies in these fields. Currently, I am
           actively seeking opportunities to apply my skills and contribute to
           exciting projects in the tech industry.
         </p>
       </section>
 
-      <section id="education">
-        <h2>Education</h2>
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
         <p>
           B.E. From Dayananda Sagar College of Engineering, Bangalore, Aug 2014
           – June 2018.
         </p>
       </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
         <div class="skills-grid">
           <div>
             <h3>Frontend</h3>
@@ -91,19 +95,14 @@
           </div>
         </div>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
         <div class="project">
           <h3>Keeper App</h3>
           <p class="skills-used">
             Skills Used: React.js, JavaScript (ES6+), HTML5, CSS3.
           </p>
-          <a
-            href="https://github.com/Chaupatil/Keeper-App"
-            target="_blank"
-            class="project-link-button"
-            >Project Link</a
-          >
           <ul class="project-description">
             <li>
               Developed a responsive note-taking web application using React.
@@ -113,19 +112,21 @@
             </li>
             <li>Designed a user-friendly UI with custom CSS.</li>
           </ul>
+          <a
+            href="https://github.com/Chaupatil/Keeper-App"
+            class="project-link-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Link</a
+          >
         </div>
+
         <div class="project">
           <h3>Weather App</h3>
           <p class="skills-used">
             Skills Used: Node.js, Express.js, Axios, EJS, CSS, OpenWeatherMap
             API.
           </p>
-          <a
-            href="https://github.com/Chaupatil/weather-app"
-            target="_blank"
-            class="project-link-button"
-            >Project Link</a
-          >
           <ul class="project-description">
             <li>
               Developed a web application that provides real-time weather
@@ -140,19 +141,21 @@
               CSS.
             </li>
           </ul>
+          <a
+            href="https://github.com/Chaupatil/weather-app"
+            class="project-link-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Link</a
+          >
         </div>
+
         <div class="project">
           <h3>Book Tracker</h3>
           <p class="skills-used">
             Skills Used: Node.js, Express.js, PostgreSQL, EJS, RESTful API,
             HTML/CSS, JavaScript.
           </p>
-          <a
-            href="https://github.com/Chaupatil/book-tracker"
-            target="_blank"
-            class="project-link-button"
-            >Project Link</a
-          >
           <ul class="project-description">
             <li>
               Developed a web application for tracking books, including adding,
@@ -171,18 +174,20 @@
               responsive, user-friendly interface.
             </li>
           </ul>
+          <a
+            href="https://github.com/Chaupatil/book-tracker"
+            class="project-link-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Link</a
+          >
         </div>
+
         <div class="project">
           <h3>Blog App</h3>
           <p class="skills-used">
             Skills Used: Node.js, Express.js, EJS, HTML/CSS.
           </p>
-          <a
-            href="https://github.com/Chaupatil/Blog"
-            target="_blank"
-            class="project-link-button"
-            >Project Link</a
-          >
           <ul class="project-description">
             <li>
               Developed a dynamic blog platform allowing users to create, view,
@@ -196,16 +201,18 @@
               Designed a responsive and user-friendly interface using CSS.
             </li>
           </ul>
+          <a
+            href="https://github.com/Chaupatil/Blog"
+            class="project-link-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Link</a
+          >
         </div>
+
         <div class="project">
           <h3>Simon Game</h3>
           <p class="skills-used">Skills Used: HTML, CSS, JavaScript, jQuery.</p>
-          <a
-            href="https://github.com/Chaupatil/Simon-game"
-            target="_blank"
-            class="project-link-button"
-            >Project Link</a
-          >
           <ul class="project-description">
             <li>
               Developed an interactive Simon game where players repeat an
@@ -220,20 +227,28 @@
               current level.
             </li>
           </ul>
+          <a
+            href="https://github.com/Chaupatil/Simon-game"
+            class="project-link-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Link</a
+          >
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
         <p>
           Email: <a href="mailto:patilchau@gmail.com">patilchau@gmail.com</a>
         </p>
-        <p>Phone: 9902781824</p>
+        <p>Phone: <a href="tel:+919902781824">9902781824</a></p>
         <p>
           LinkedIn:
           <a
             href="https://www.linkedin.com/in/shravan-patil-2b3b62126/"
             target="_blank"
+            rel="noopener noreferrer"
             >Shravan Patil</a
           >
         </p>
@@ -241,7 +256,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2024. All rights reserved.</p>
+      <p>&copy; 2024 Shravan Patil. All rights reserved.</p>
     </footer>
   </body>
 </html>

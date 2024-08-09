@@ -64,111 +64,32 @@ main {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: #ff7e5f;
 }
 
 p {
   margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skills-list li {
-  background: #fff;
-  padding: 0.5rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-
-.project {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-}
-
-.project h3 {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.project-description {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 0.5rem 0;
-}
-
-.skills-used {
-  font-weight: bold;
-  color: #ff7e5f;
-  margin: 0.5rem 0;
-}
-
-.project-link-button {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #ff7e5f;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.project-link-button:hover {
-  background-color: #feb47b;
-}
-
-#about,
-#education,
-#skills,
-#contact {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#contact p a {
-  color: #ff7e5f;
-  text-decoration: none;
-}
-
-#contact p a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  line-height: 1.8;
 }
 
 .skills-grid {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.skills-grid > div {
+  margin-bottom: 20px;
 }
 
 .skills-grid h3 {
@@ -187,14 +108,86 @@ footer {
 }
 
 .skills-grid li {
-  background: #fff;
+  background: #ffffff;
   padding: 0.3rem 0.6rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  white-space: nowrap; /* Prevents text from wrapping inside the list items */
-  width: auto; /* Ensures the width of the li element only takes the width of the text */
-  display: inline-block; /* Makes the li elements inline, taking up only as much space as needed */
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-grid li:hover {
+  background-color: #ff7e5f;
+  color: #fff;
+}
+
+.project {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #ff7e5f;
+}
+
+.project-description {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 1rem 0;
+}
+
+.skills-used {
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.project-link-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #ff7e5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link-button:hover {
+  background-color: #feb47b;
+}
+
+#contact p a {
+  color: #ff7e5f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact p a:hover {
+  color: #feb47b;
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -214,11 +207,28 @@ footer {
     margin: 0.5rem 0;
   }
 
-  .skills-list {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .skills-grid ul {
-    justify-content: center; /* Centers the list items on smaller screens */
+    justify-content: flex-start;
   }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 0.5s ease-in-out;
 }
