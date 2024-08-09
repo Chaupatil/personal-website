@@ -219,4 +219,8 @@ footer {
   .skills-list {
     grid-template-columns: 1fr;
   }
+
+  .skills-grid ul {
+    justify-content: center; /* Centers the list items on smaller screens */
+  }
 }
