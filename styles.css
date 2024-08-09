@@ -193,10 +193,8 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   white-space: nowrap; /* Prevents text from wrapping inside the list items */
-}
-
-.skills-grid li:not(:last-child) {
-  margin-right: 10px; /* Add spacing between list items */
+  width: auto; /* Ensures the width of the li element only takes the width of the text */
+  display: inline-block; /* Makes the li elements inline, taking up only as much space as needed */
 }
 
 @media (max-width: 768px) {
